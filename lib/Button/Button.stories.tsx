@@ -12,13 +12,25 @@ type Story = StoryObj<typeof Button>
 
 export const Default: Story = {
 	args: {
-		children: 'Click me!'
+		children: 'Click me!',
+		variant:'default',
+		size:'default'
 	}
 }
 
 export const Emoji: Story = {
 	args: {
-		children: '😅'
+		children: '😅',
+		variant:'destructive',
+		size:'lg'
+	}
+}
+
+export const SimpleButton: Story = {
+	args: {
+		children: 'Simple Button',
+		variant:'ghost',
+		size:'sm'
 	}
 }
 
